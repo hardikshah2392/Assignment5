@@ -1,0 +1,28 @@
+@mixin break($length) {
+  @media screen and (max-width: $length) {
+    @content;
+  }
+}
+
+@mixin clearfix {
+  clear: both;
+}
+
+@mixin social {
+  @each $media in $social-div {
+    $i: index($social-div, $media);
+    div.#{$media} {
+      background: nth($social-dimensions, $i);
+    }
+  }
+}
+
+
+@mixin dimensions($x: inherit, $y: inherit) {
+  width: $x;
+  height: $y;
+}
+
+@mixin margins($args...){
+  margin: $args;
+}

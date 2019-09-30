@@ -1,0 +1,193 @@
+/*! CONTENT */
+
+#headline {
+  @include dimensions(100%, 130px);
+  background: $red;
+  text-align: center;
+  @include margins(0 auto);
+  h1 {
+    color: $white;
+    font-size: 2.5em;
+    font-weight: 100;
+    padding-top: 50px;
+    @include break(767px) {
+      font-size: 2em;
+      padding-top: 50px;
+    }
+    @include break(459px) {
+      font-size: 1.5em;
+      padding-top: 30px;
+      
+    }
+  }
+}
+#content {
+  width: 940px;
+  @include margins(20px auto);
+  @include break(959px) {
+    width: inherit;
+  }
+  h3 {
+    color: $grey;
+    font-size: 2em;
+    font-weight: 400;
+    @include break(459px) {
+      font-size: 1.6em;
+    }
+  }
+  #products {
+    width: 460px;
+    float: left;
+    @include break(959px) {
+      width: 46%;
+      margin: 0 2%;
+    }
+    @include break(767px) {
+      width: 96%;
+      @include margins(0 2%);
+      float: none;
+    }
+    img {
+      float: left;
+      @include margins(0px 20px 0px 0px);
+    }
+    article {
+      @include margins(0px 0px 40px 0px);
+    }
+    h4 {
+      line-height: 1em;
+    }
+  }
+  #testimonials {
+    width: 460px;
+    float: right;
+    @include break(959px) {
+      width: 46%;
+      @include margins(0 2%);
+    }
+    @include break(767px) {
+      width: 96%;
+      @include margins(0 2%);
+      float: none;
+    }
+  }
+  article img {
+    @include break(459px) {
+      display: none;
+    }
+  }
+}
+
+/* ! HEADER */
+header {
+  width: inherit;
+  @include clearfix();
+  text-align: center;
+  padding-top: 40px;
+  img {
+    max-width: 100%;
+    height: auto;
+    @include break(767px) {
+      @include margins(0px 0px 100px 0px);
+    }
+    @include break(459px) {
+      @include margins(0px 0px 80px 0px);
+    }
+  }
+
+  h1 {
+    color: $red2;
+    font-weight: 100;
+    font-size: 4em;
+    line-height: 0;
+    @include break(959px) {
+      font-size: 3em;
+    }
+    @include break(767px) {
+      font-size: 2em;
+    }
+  }
+  h1:nth-of-type(1){
+      @include break(459px) {
+        font-size: 1.4em;
+        @include margins(0px 0px 20px 0px);
+      }
+  }
+
+  h2 {
+    color: $white;
+    font-weight: 900;
+    font-size: 2.5em;
+    line-height: 0;
+    @include margins(0px 0px 70px 0px);
+    @include break(959px) {
+      font-size: 1.5em;
+    }
+    @include break(767px) {
+      font-size: 1em;
+    }
+    @include break(459px) {
+      font-size: 1.4em;
+    }
+  }
+
+  h3 {
+    color: $grey;
+    font-weight: 400;
+    font-size: 2em;
+    line-height: 0;
+    @include margins(0px 0px 50px 0px);
+    @include break(767px) {
+      font-size: 1.5em;
+    }
+    @include break(459px) {
+      color: $white;
+      font-size: 1em;
+    }
+  }
+}
+
+/* ! FOOTER */
+.greybar {
+  @include dimensions(100%, 90px);
+  background: $white2;
+  @include clearfix();
+  padding-top: 30px;
+  @include break(459px) {
+    display: none;
+  }
+}
+footer {
+  @include dimensions(100%, 120px);
+  background: $grey2;
+  text-align: center;
+  color: $white;
+  padding-top: 50px;
+  @include break(459px) {
+    text-align: center;
+  }
+  p,
+  img {
+    @include break(459px) {
+      float: none;
+      @include margins(0px);
+    }
+  }
+}
+.social-media {
+  a {
+    display: block;
+    @include dimensions(36px, 36px);
+    text-indent: -9999px;
+  }
+  @include margins(0 auto);
+  width: 165px;
+  @include social();
+}
+.social-media div {
+  float: left;
+  @include margins(5px);
+}
+
+
+
