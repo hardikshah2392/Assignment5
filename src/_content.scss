@@ -166,8 +166,7 @@ footer {
   @include break(459px) {
     text-align: center;
   }
-  p,
-  img {
+  p,img {
     @include break(459px) {
       float: none;
       @include margins(0px);
@@ -186,7 +185,7 @@ footer {
 }
 .social-media div {
   float: left;
-  @include margins(5px);
+  @include margins(5px 5px 0 0);
 }
 
 

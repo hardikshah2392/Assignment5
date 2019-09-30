@@ -4,7 +4,7 @@ figure {
   background: url(#{$image-loc}/logo.png) no-repeat 0 50px;
   float: left;
   display: block;
-  @include margin(0);
+  @include margins(0);
   @include break(959px) {
     @include dimensions(inherit, 140px);
     float: none;
